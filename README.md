@@ -49,3 +49,9 @@ Kaggle (2023) Available at: https://www.kaggle.com/datasets/arshid/iris-flower-d
 
 GeeksforGeeks (2023) Available at: https://www.geeksforgeeks.org/exploratory-data-analysis-on-iris-dataset/
 (Accessed: 17-4-2023)
+
+Seaborn (2023) Available at: https://seaborn.pydata.org/generated/seaborn.scatterplot.html (Accessed: 6-4-2023)
+
+Pandas (2023) Available at: https://pandas.pydata.org/docs/getting_started/intro_tutorials/06_calculate_statistics.html (Accessed: 5-4-2023)
+
+Mathplotlib (2023) Available at: https://matplotlib.org/stable/gallery/statistics/hist.html#histograms (Accessed: 4-4-2023)
