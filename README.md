@@ -34,6 +34,8 @@ The Iris dataset was first introduced by the British statistician and biologist 
 - Iris Virginica
 - Iris Versicolor
 
+![Three species of Iris.](./irises.png)  
+
 There are fifty samples of each species measured totalling 150 rows of data in the set. Each row od data consistes of four measurements taken of the lenght and width of the sepals and petals measured in centimeters.
 
 
