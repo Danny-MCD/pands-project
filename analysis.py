@@ -52,14 +52,14 @@ sns.set(style="darkgrid")                                                   # th
 
 
 def histogram_plot(p1, p2, p3):                                             # creation of the histogram plot function with parameters p1, p2 and p3 to be passed in on execution
-    sns.histplot(data = iris_virginica[p1], kde = False, label = 'Iris virginica', color = 'darkblue') 
-    sns.histplot(data = iris_versicolor[p1], kde = False, label = 'Iris versicolor', color = 'yellow')
+    sns.histplot(data = iris_virginica[p1], kde = False, label = 'Iris virginica', color = 'darkblue')      #Sets data to be used for each histogram to be taken from P1
+    sns.histplot(data = iris_versicolor[p1], kde = False, label = 'Iris versicolor', color = 'yellow')      # Sets labels and colours of each iris species to distinguish them
     sns.histplot(data = iris_setosa[p1],  kde = False, label = 'Iris setosa', color = 'green')
-    plt.xlabel(p2, fontdict = font2)
-    plt.ylabel("Frequency", fontdict = font2)
-    plt.title("Histogram Plot of " + p2 + " by Flower Species", fontdict = font1) 
-    plt.grid(color = 'darkgrey', ls = '--', lw = 0.5) 
-    plt.legend(loc='upper right')
+    plt.xlabel(p2, fontdict = font2)                                                # Adds X label using font2 settings
+    plt.ylabel("Frequency", fontdict = font2)                                       # Adds Y label using font2 settings
+    plt.title("Histogram Plot of " + p2 + " by Flower Species", fontdict = font1)   # Adds title to plot using p2 parameter and using previously set font1 settings
+    plt.grid(color = 'darkgrey', ls = '--', lw = 0.5)                               # Adds settings for grid (colour, style and spacing)
+    plt.legend(loc='upper right')                                                   # plots legend in upper right location
     plt.savefig(p3)
     plt.show()
 
@@ -73,12 +73,12 @@ def histograms():                                                           # Pa
 
 
 def scatterplot(p1, p2, p3, p4, p5):                    # Creation of scatterplot function with 5 parameters p1-p5 to be passed in on execution
-    sns.scatterplot(data = irisdata, x = p1, y = p2, hue = "class", palette = "deep")
-    plt.xlabel(p3, fontdict = font2)
-    plt.ylabel(p4, fontdict = font2)
-    plt.title("Scatterplot of " + p3 +" and " + p4 + " by Flower Species", fontdict = font1) 
-    plt.grid(color = 'darkgrey', ls = '--', lw = 0.5) 
-    plt.legend(loc='upper left')
+    sns.scatterplot(data = irisdata, x = p1, y = p2, hue = "class", palette = "deep")           # Settings for scatterplots
+    plt.xlabel(p3, fontdict = font2)                                                            # Sets X label and font settings used
+    plt.ylabel(p4, fontdict = font2)                                                            # Sets Y label and font settings used
+    plt.title("Scatterplot of " + p3 +" and " + p4 + " by Flower Species", fontdict = font1)    # Adds title using parameters P3 and P4 and font settings
+    plt.grid(color = 'darkgrey', ls = '--', lw = 0.5)                                           # Settings for Grid (colour, style and spacing)
+    plt.legend(loc='upper left')                                                                # sets legend location
     plt.savefig(p5)
     plt.show()
 
